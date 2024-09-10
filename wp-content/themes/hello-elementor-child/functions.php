@@ -35,7 +35,7 @@ function add_admin_link_to_nav_menu($items, $args)
 
     if (is_user_logged_in() && $args->menu == 'navigation') {
 
-        $item = '<li><a href="' . get_admin_url() . '">Admin</a></li>';
+        $item = '<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30" ><a class="elementor-item" href="' . get_admin_url() . '">Admin</a></li>';
 
         // Convertir les éléments du menu en tableau
         $items_array = explode('</li>', $items);
